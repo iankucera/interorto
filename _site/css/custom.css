@@ -1,0 +1,167 @@
+/* custom.scss */
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700&subset=latin,latin-ext);
+html {
+  background-color: #fff;
+  background-image: url(../img/bg-page-ok.png);
+  background-repeat: repeat-x;
+  margin: auto;
+  position: relative;
+  min-height: 100%; }
+
+body {
+  font: normal 100% "Trebuchet MS", Arial, Helvetica, sans-serif, Tahoma, "Lucida Grande", Geneva, sans-serif, "Lucida Sans Unicode";
+  color: #3378ba;
+  background-image: url(../img/body-pattern-ok.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: top center;
+  margin-bottom: 40px; }
+
+header {
+  padding: 0;
+  min-height: auto; }
+
+.container {
+  max-width: 900px; }
+
+.navbar-nav {
+  font-family: 'Oswald', sans-serif;
+  margin-top: 3rem; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a.active {
+    text-transform: uppercase;
+    color: #fff !important;
+    background-color: #006097 !important;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .navbar-default .navbar-nav > li > a:hover {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #3DB6F0 !important; }
+
+nav {
+  padding-top: 0;
+  margin-top: 0;
+  margin: auto; }
+
+.navbar .container {
+  padding: 0;
+  margin: 0 auto; }
+.navbar form {
+  padding: 0;
+  margin: 0;
+  margin-top: 3rem; }
+  .navbar form .form-control {
+    padding: 0 10px;
+    width: 15rem !important; }
+
+/* carousel */
+.transition-timer-carousel .carousel-caption {
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 4%, rgba(0, 0, 0, 0.5) 32%, black 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(4%, rgba(0, 0, 0, 0.1)), color-stop(32%, rgba(0, 0, 0, 0.5)), color-stop(100%, black));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 4%, rgba(0, 0, 0, 0.5) 32%, black 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 4%, rgba(0, 0, 0, 0.5) 32%, black 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 4%, rgba(0, 0, 0, 0.5) 32%, black 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 4%, rgba(0, 0, 0, 0.5) 32%, black 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 15%;
+  padding-right: 15%; }
+
+.transition-timer-carousel .carousel-caption .carousel-caption-header {
+  margin-top: 10px;
+  font-size: 24px; }
+
+@media (min-width: 970px) {
+  /* Lower the font size of the carousel caption header so that our caption
+  doesn't take up the full image/slide on smaller screens */
+  .transition-timer-carousel .carousel-caption .carousel-caption-header {
+    font-size: 36px; } }
+.transition-timer-carousel .carousel-indicators {
+  bottom: 0px;
+  margin-bottom: 5px; }
+
+.transition-timer-carousel .carousel-control {
+  z-index: 11; }
+
+.transition-timer-carousel .transition-timer-carousel-progress-bar {
+  height: 5px;
+  background-color: #006097;
+  width: 0%;
+  margin: -5px 0px 0px 0px;
+  border: none;
+  z-index: 11;
+  position: relative; }
+
+.transition-timer-carousel .transition-timer-carousel-progress-bar.animate {
+  /* We make the transition time shorter to avoid the slide transitioning
+  before the timer bar is "full" - change the 4.25s here to fit your
+  carousel's transition time */
+  -webkit-transition: width 4.25s linear;
+  -moz-transition: width 4.25s linear;
+  -o-transition: width 4.25s linear;
+  transition: width 4.25s linear; }
+
+.circle-links {
+  font-family: 'Oswald', sans-serif;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center; }
+  .circle-links a {
+    border-radius: 50%;
+    background: #34AEE3 none repeat scroll center;
+    width: 184px;
+    height: 184px;
+    float: left;
+    margin-left: 40px;
+    color: #fff;
+    padding-top: 5rem;
+    text-transform: uppercase; }
+  .circle-links .pdf {
+    background: #34AEE3; }
+  .circle-links .offer {
+    background: #007DBE !important; }
+  .circle-links .courses {
+    background: #00476F !important; }
+
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #eee; }
+
+footer {
+  background-image: url(../img/bg-footer.png);
+  background-repeat: repeat-x; }
+  footer .row {
+    margin: auto;
+    max-width: 900px; }
+  footer .f-copy {
+    text-align: right; }
+  footer ul {
+    min-height: 40px; }
+  footer ul > li {
+    display: inline; }
+  footer a {
+    color: #afafaf; }
+
+/*# sourceMappingURL=custom.css.map */
