@@ -69,7 +69,7 @@ nav {
 	margin: auto;
 }
 
-#navbar ul {
+ul.nav {
 	margin-top: 3.5rem; 
 	margin-left: 3rem;
 
@@ -81,12 +81,47 @@ nav {
 }
 
 .navbar {
-	margin-bottom: 2.5rem; 
+	margin-bottom: 1rem; 
 
 	.container {
 		padding: 0; 
 		margin: 0 auto;
 	}
+	
+	.header-items {
+		text-align:right; 
+		float: left; 
+		width: 100%; 
+		margin-top: 0.5rem;
+
+		.col-lg-12 {
+			padding-right: 0;
+			padding-left: 0;
+		}
+		ul { 
+			margin-top: 0; 
+			margin-left: 0;
+
+			li {
+				display: inline;
+				font-size: 0.8rem; 
+				a {
+					color: #a5a5a5;
+					background-color: transparent;
+					border-radius: 150%;
+					overflow: hidden; 
+					min-width: 20px;
+					min-height: 20px;
+					padding:5px;
+				}
+				a:hover, .active {
+					color: #fff;
+					background-color: #3378BA;
+				}
+			}
+		}
+	}
+
 	form {
 		padding: 0;
 		margin: 0;
@@ -106,7 +141,7 @@ nav {
 }
 
 @media (max-width: 767px) {
-	#navbar ul {
+	ul.nav {
 		margin-top: 1.5rem; 
 		margin-left: 0rem;
 
@@ -120,6 +155,9 @@ nav {
 		border: none; 
 		border-color: transparent;
 	}
+	.navbar-collapse.in {
+		overflow-y: hidden;
+	}
 	.circles {
 		.col-xs-12 {
 			margin-bottom: 10px;
@@ -131,7 +169,7 @@ nav {
 		padding: auto;
 	}
 	.navbar {
-		padding-bottom: 2rem; 
+		padding-bottom: 1rem; 
 		margin-bottom: 1.5rem; 
 
 		.container {
@@ -159,7 +197,7 @@ nav {
 }
 
 @media (max-width: 992px) {
-	#navbar ul {
+	ul.nav {
 	margin-top: 3.5rem; 
 	margin-left: 0rem;
 
@@ -197,7 +235,7 @@ nav {
 	width: 100%;
 	left: 0px;
 	right: 0px;
-	top: 35%;
+	top: 37%;
 	text-align: left;
 	padding-top: 5px;
 	padding-left: 15%;
@@ -253,17 +291,19 @@ nav {
 	text-align: center;
 	margin: auto;
 	padding: 0;
-	margin-top: 3rem;
+	margin-top: 3rem; 
+	margin-bottom: 2rem; 
 
 	a {
+		font-size: 1.1rem;
 		border-radius: 50%; 
 		background: #34AEE3 none repeat scroll center; 
-		width: 220px; 
-		height: 220px; 
+		width: 210px; 
+		height: 210px; 
 		color: #fff; 
 		display: block; 
 		overflow: hidden; 
-		padding-top:5rem; 
+		padding-top: 5.5rem; 
 		margin: auto; 
 		text-transform:uppercase;
 		box-shadow: 0px 5px 10px 0px rgba(153, 153, 153, 1);
@@ -280,6 +320,7 @@ nav {
 	a:hover {
 		background-color: rgba(52, 174, 227, 0.8);
 		text-decoration: none;
+		color:yellow;
 
 	}	
 }
