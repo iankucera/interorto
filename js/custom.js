@@ -1,3 +1,5 @@
+// carousel 
+
 $(document).ready(function() {    
     //Events that reset and restart the timer animation when the slides change
     $("#transition-timer-carousel").on("slide.bs.carousel", function(event) {
@@ -15,3 +17,7 @@ $(document).ready(function() {
     $(".transition-timer-carousel-progress-bar", "#transition-timer-carousel")
         .css("width", "100%");
 });
+
+// search input expandable
+
+

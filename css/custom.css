@@ -103,8 +103,14 @@ ul.nav {
     text-align: right; }
     .navbar form .form-control {
       padding: 0 10px;
-      width: 14rem;
+      width: 6rem;
       margin-right: 0.5rem; }
+    .navbar form .form-control:focus {
+      transition-property: width;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+      width: 14rem; }
     .navbar form .btn-default {
       width: 3rem; }
 
@@ -147,6 +153,8 @@ ul.nav {
         width: 87%;
         float: left;
         margin-right: 1%; }
+      .navbar form .form-control:focus {
+        transition: none; }
       .navbar form .btn-default {
         float: left;
         width: 12%; } }
@@ -225,7 +233,49 @@ ul.nav {
 .carousel-inner {
   border: solid 1px white; }
 
-/* carousel end */
+/* Carousel end */
+/* custom search input */
+#custom-search-form {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0; }
+
+#custom-search-form .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: width  0.2s ease-in-out;
+  -moz-transition: width  0.2s ease-in-out;
+  -o-transition: width  0.2s ease-in-out;
+  transition: width 0.3s ease-in-out; }
+
+#custom-search-form button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+.search-query:focus + button {
+  z-index: 3; }
+
+.search-query:focus {
+  width: 500px; }
+
+/* search input end */
 .circle-links {
   font-family: 'Oswald', sans-serif;
   text-align: center;
